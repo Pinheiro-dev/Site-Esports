@@ -10,10 +10,13 @@ body {
 }
 
 .container {
-    width: 95%;
-    /* border: red solid; */
-    margin: auto;
-    height: 77px;
+    
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+     width: 95%; 
+     /* border: red solid;  */
+     margin: auto;
+    height: 77px; 
 }
 
 /* FIM GLOBAL */
@@ -23,27 +26,43 @@ body {
 .header{
     background-color: #111111;
     height: 77px;
-    border-bottom: #B930D6 solid 4px ;
+    border-bottom:#6c48a5 solid 4px ;
+    align-items: center;
 }
 
 /* FIM HEADER */
 
 /* NAV */
 
+.nav {
+    display: flex ;   
+}
 
 .nav .lol {
     height: 81px;
-    margin-top: -2px;
-    float: left;
+    /* margin-top: -2px;
+    float: left; */
 
+}
+
+
+.nav .lista select {
+    position: absolute;
+    width: 18px ;
+    margin: 30px -14px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
 }
 
 .nav .linha-vertical {
     width: 2px;
     height: 49px;
-    background-color: #B930D6;
-    float: left;
-    margin-top: 14px;
+    background-color:#9362df;
+    /* float: left; */
+    margin: 14px 10px;
 }
 
 .nav a {
@@ -52,33 +71,46 @@ body {
     font-size: 18px;
     /* weight = peso ou influência */
     font-weight: bold;
+
 }
 
-.nav li {
-    float: left;
+.nav .linkados {
     /* display: inline-block; */
-    margin-left: 54px;
-    padding: 26px 0px 0px 0px;
+    text-decoration: none;
+    /* float: left; */
+     /* margin-left: 54px;  */
+    padding: 28px 0px 0px 0px; 
+
     /* cima, direita, baixo, esquerda */
 }
 
-.nav .buscar {
-    margin-left: 54px;
-    margin-top: 10px;
-    border-radius: 10px ;
+.linkados li {
     display: inline-block;
-    /* padding: 4px; */
-    background-color: #B930D6;
+    padding:0px 20px ;
+    /* justify-content: space-evenly; */
 }
 
+.nav  .buscar-perfil {
+    /* float: right; */
+    /* margin-top: -47px; */
+    display: flex;
+    align-items: center;
+} 
 
+.nav .buscar {
+    /* margin-right: 130px;
+    margin-left: 54px;
+    margin-top: 10px; */
+    border-radius: 10px ;
+    /* float: left; */
+    width: 446 ;
+    padding: 4px;
+    background-color: #9362df;
+}
 
-.nav button {
-    margin: none;
-    background: none;
-    border: none;
+.nav i {
     color: black;
-    padding: 4px 10px;
+    /* padding: 4px 10px; */
     width: 29px;
 }
 .nav input {
@@ -87,15 +119,38 @@ body {
     /* margin-top: 10px; */
     background: none;
     width: 416px;
-    height: 49px;
+    height: 40px;
+    outline: none;
     /* border-radius: 10px; */
 }
-
 
 .nav ::placeholder {
     color: rgba(17, 17, 17, 0.5);
     font-size: 18px;
     font-weight: bold;
 }
+
+.usuario {
+    display: flex;
+    align-items: center;
+    margin: 0px 50px;
+
+}
+
+.nav .buscar-perfil .imagem img {
+    height: 40px;
+    /* margin-top: 15px;    */
+}
+
+
+.nav .buscar-perfil .perfil {
+    margin-left: 40px;
+}
+
+.nav .buscar-perfil .sair img {
+    height: 33px;
+    /* float: right; */
+}
+
 
 /* FIM NAV */
