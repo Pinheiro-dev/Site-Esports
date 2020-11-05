@@ -1,0 +1,123 @@
+
+/* configuração da animação */
+@keyframes colorCycle /* nome da animação*/{
+    0% /* inicio*/ {
+        filter: brightness(0)  invert(1); 
+        /* o 0 deixa a cor preta e o invert, inverte as cores */
+    }
+}
+/* GLOBAL */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imagens/login.jpg);
+}
+/* FIM GLOBAL */
+
+/* login */
+
+.box-login {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 487px;
+    height: 475px;
+    border-radius: 500px;
+    margin: auto;
+    margin-top: 10vw;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(32, 32, 32, 0.452);
+}
+
+.texto {
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.texto p {
+    /* FORMA DE DEIXAR O TEXTO GRADIENTE */
+    background-image: linear-gradient(90deg, #ffffff,#00FFD1);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* cria uma animação */
+    animation: colorCycle 10s;
+     /* deixa inifnito */
+    
+}
+
+.username {
+    margin-top: 19px;
+}
+
+.username input {
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    
+    text-align: center;
+    transition: 0.25s;
+}
+
+.username :focus {
+    width: 300px;
+    border-color: #00FFD1;
+}
+
+.senha {
+    margin-top: 19px;
+}
+
+.senha input {
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    border: 2px solid white;
+    background: none;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.senha :focus {
+    width: 300px;
+    border-color: #00FFD1;
+}
+
+.login {
+    margin-top: 19px;
+}
+
+.login button {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    border: 2px solid  #00FFD1;
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.login :hover {
+    background-color: #00FFD1;
+    border-color:  #00FFD1;
+    color: black;
+}
+
+/* fim login */

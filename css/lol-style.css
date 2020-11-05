@@ -104,8 +104,8 @@ body {
     border-radius: 10px ;
     /* float: left; */
     width: 446 ;
-    padding: 4px;
-    background-color: #9362df;
+    padding:5px;
+    background-color: rgba(147, 98, 223, 0.5);;
 }
 
 .nav i {
@@ -119,7 +119,7 @@ body {
     /* margin-top: 10px; */
     background: none;
     width: 416px;
-    height: 40px;
+    height: 30px;
     outline: none;
     /* border-radius: 10px; */
 }
@@ -133,8 +133,8 @@ body {
 .usuario {
     display: flex;
     align-items: center;
-    margin: 0px 50px;
-
+    margin: 0px 70px;
+    
 }
 
 .nav .buscar-perfil .imagem img {
