@@ -26,7 +26,7 @@ body {
 .header{
     background-color: #111111;
     height: 77px;
-    border-bottom:#6c48a5 solid 4px ;
+    border-bottom:#00FFD1 solid 4px ;
     align-items: center;
 }
 
@@ -52,15 +52,16 @@ body {
     margin: 30px -14px;
     border: none;
     outline: none;
-    color: black;
+    color: #00FFD1;
     font-weight: bold;
     background-color: transparent;
+    background-color: #111111;
 }
 
 .nav .linha-vertical {
     width: 2px;
     height: 49px;
-    background-color:#9362df;
+    background-color:#00FFD1;
     /* float: left; */
     margin: 14px 10px;
 }
@@ -105,7 +106,7 @@ body {
     /* float: left; */
     width: 446 ;
     padding:5px;
-    background-color: rgba(147, 98, 223, 0.5);;
+    background-color: rgba(0, 255, 209, 50%);
 }
 
 .nav i {
