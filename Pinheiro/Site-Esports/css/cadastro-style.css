@@ -1,0 +1,115 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0 ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url(../imagens/login.jpg); */
+    background-color: #1F1F1F;
+}
+
+a {
+    text-decoration: none;
+}
+/* FIM GLOBAL */
+
+
+/* Box-Cadastro */
+.box-cadastro {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 487px;
+    height: 475px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 10vw;
+    align-items: center;
+    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.185);
+}
+
+
+/* fim box cadastro */
+
+/* Titulo */
+
+.titulo {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+/* fim titulo */
+/* entrar com google */
+.a-google {
+    margin-top: 19px;
+}
+
+.google {
+    display: flex;
+    /* margin-top: 19px; */
+    height: 30px;
+    width: 200px;
+    color: black;
+    border-radius: 26px;
+    border: 2px solid #1F1F1F;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    
+}
+
+.google img {
+    height: 20px;
+    margin-right: 10px;
+    color: black;
+    
+}
+/* fim entrar com google */
+
+/* OU */
+
+.ou .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+.ou p {
+    margin: 5px;
+}
+
+.ou .linha{
+    width: 180px;
+    height: 2px;
+    background-color:#1f1f1f46;
+}
+
+/* fim OU */
+
+
+
+/* Opacidade e a */
+
+.opacidade {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+
+}
+
+a :hover {
+    opacity: 70%;
+    /* border-color: #1F1F1F ; */
+}
+
+/* fim Opacidede e a */
