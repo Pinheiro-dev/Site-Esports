@@ -16,11 +16,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url(../imagens/login.jpg);
+    /* background-image: url(../imagens/login.jpg); */
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1f1f1f;
 }
 
 a {
     text-decoration: none;
+    font-weight: bold;
 }
 /* FIM GLOBAL */
 
@@ -31,14 +39,14 @@ a {
 .box-login {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     width: 487px;
     height: 475px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: auto;
     margin-top: 10vw;
     align-items: center;
-    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.397);
+    box-shadow: 3px 3px 50px #ffa01c33;
 }
 /* fim box */
 
@@ -52,7 +60,7 @@ a {
 .texto p {
     /* color: #00FFD1; */
     /* FORMA DE DEIXAR O TEXTO GRADIENTE */
-    background-image: linear-gradient(90deg, #658eff,#00FFD1);
+    background-image: linear-gradient(90deg, #000000,#FF9F1C);
     /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -74,8 +82,8 @@ a {
     border: none;
     border-radius: 50px;
     background: none;
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
     
     text-align: center;
     transition: 0.25s;
@@ -83,7 +91,7 @@ a {
 
 .username :focus {
     width: 300px;
-    border-color: #00FFD1;
+    border-color: #FF9F1C;
 }
 /* fim username */
 
@@ -98,8 +106,8 @@ a {
     outline: none;
     border: none;
     border-radius: 24px;
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
     background: none;
     text-align: center;
     transition: 0.25s;
@@ -107,7 +115,7 @@ a {
 
 .senha :focus {
     width: 300px;
-    border-color: #00FFD1;
+    border-color: #FF9F1C;
 }
 /* fim senha */
 
@@ -121,7 +129,7 @@ a {
 
 .esqueceu p {
     font-size: 12px;
-    color: white;
+    color: black;
 }
 /* fim esqueceu a senha */
 
@@ -137,9 +145,9 @@ a {
     outline: none;
     border: none;
     border-radius: 24px;
-    border: 2px solid  #00FFD1;
+    border: 2px solid  #FF9F1C;
     background: none;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
@@ -147,8 +155,8 @@ a {
 }
 
 .login :hover {
-    background-color: #00FFD1;
-    border-color:  #00FFD1;
+    background-color: #FF9F1C;
+    border-color:  #FF9F1C;
     color: black;
 }
 /* fim botao */
@@ -163,9 +171,9 @@ a {
     /* margin-top: 19px; */
     height: 30px;
     width: 200px;
-    color: white;
+    color: black;
     border-radius: 26px;
-    border: 2px solid white;
+    border: 2px solid black;
     align-items: center;
     font-size: 12px;
     font-weight: 500;
@@ -176,7 +184,7 @@ a {
 .google img {
     height: 20px;
     margin-right: 10px;
-    color: white;
+    color: #756767;
     
 }
 /* fim entrar com google */
@@ -191,14 +199,13 @@ a {
     
     height: 30px;
     width: 200px;
-    color: white;
+    color: black;
     border-radius: 26px;
-    border: 2px solid white;
+    border: 2px solid black;
     align-items: center;
     font-size: 12px;
     font-weight: 500;
     justify-content: center;
-    color: white;
 }
 
 .facebook img {
@@ -219,19 +226,20 @@ a {
 
 a :hover {
     opacity: 70%;
-    border-color: #00FFD1 ;
+    border-color: #FF9F1C ;
+    text-decoration: underline;
 }
 
 /* inicio cadastro */
 .cadastro {
-    margin-top: 18px;
-    margin-right: 0px;
+    margin-top: 10px;
+    margin-right: 0;
 }
 
 .cadastro p {
-    color: white;
+    color: black;
     font-size: 12px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 /* fim cadastro */
 
