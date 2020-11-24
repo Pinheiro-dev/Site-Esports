@@ -1,0 +1,195 @@
+/* GLOBAL */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imagens/login.jpg);
+    background-size: cover;
+    
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.500);
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    height: 73px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* FIM GLOBAL */
+
+/* Header */
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    height: 77px;
+    border-bottom: 4px solid #FF9F1C;
+}
+
+/* header nav */
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav .controle {
+    height: 57px;
+}
+
+.nav .lista {
+    margin-left: 20px;
+}
+
+.nav .lista select {
+    width: 20px;
+    height: 50px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    color: #41EAD4;    
+}
+
+.nav .lista select option {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF9F1C;
+}
+
+.nav .linha-vertical {
+    background-color: #41EAD4;
+    width: 2px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.nav .paginas {
+    display: flex;
+}
+
+.nav .paginas li  {
+    display: inline-block;
+    color: #FDFFFC;
+    margin-left: 100px;
+    transition: linear 0.50s;
+}
+
+.nav .paginas li  :hover{
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: bold;
+    color: #41EAD4;
+}
+
+
+.nav .menu-atual {
+    border-bottom: solid 2px #FF9F1C;
+}
+
+.nav .perfil {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+    width: 250px;
+    /* border: solid red; */
+}
+
+.nav .perfil img {
+    height: 45px;
+}
+
+.nav .perfil b{
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+    color: #41EAD4;
+    
+}
+
+.nav .perfil b :hover {
+    transition: 0.50s;
+    border-bottom: solid 2px white ;
+}
+
+.nav .sair img {
+    height: 33px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* fim header nav */
+
+/* fim header */
+
+
+/* Conteudo */
+
+.conteudo {
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    align-content: center;
+    text-align: center;
+}
+
+.conteudo .titulo  {
+    color: #FDFFFC;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 34px;
+}
+
+.conteudo .logo img {
+    height: 152px;
+    margin-top: 40px;
+}
+
+
+.conteudo .texto p {
+    margin-top: 20px ;
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    text-align: center;
+    height: 60px;
+    border-top: solid 5px #FF9F1C ;
+    color: white;
+    background-color: #111;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Fim conteudo  */
