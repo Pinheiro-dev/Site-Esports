@@ -136,7 +136,7 @@ a {
 
 .nav .perfil b :hover {
     transition: 0.50s;
-    border-bottom: solid 2px white ;
+    border-bottom: solid 2px #FDFFFC ;
 }
 
 .nav .sair img {
@@ -149,37 +149,75 @@ a {
 
 /* fim header */
 
+/* box sobre */
 
-/* Conteudo */
-
-.conteudo {
-    align-items: center;
+.box-sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    width: 70%;
+    height: 400px;
     margin: auto;
-    margin-top: 40px;
-    align-content: center;
-    text-align: center;
+    border-radius: 20px;
+    /* border: 2px solid #FF9F1C; */
 }
 
-.conteudo .titulo  {
+.box-sobre .titulo {
+    font-size: 35px;
+    text-align: center;
+    color: #F71735;
+    margin-top: 20px;
+}
+
+.box-sobre .sobre {
+    display: flex;
+}
+
+.box-sobre .sobre .dados {
+    margin-left: 50px;
+}
+
+.box-sobre .sobre .dados img {
+    
+    height: 230px;
+    border-radius: 500px;
+}
+
+.box-sobre .sobre .dados .texto {
+    width: 170px;
+    /* border: solid 5px red; */
+    text-align: center;
+    font-size: 20px;
+    /* color: #41EAD4; */
+    color: #F71735;
+}
+
+.box-sobre .sobre .dados .texto p {
+    font-size: 18px;
     color: #FDFFFC;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 34px;
 }
 
-.conteudo .logo img {
-    height: 152px;
-    margin-top: 40px;
+.box-sobre .sobre .escrita {
+    background-color: #948686;
+    margin: 30px;
+    width: 640px;
+    height: 260px;
+    border-radius: 20px;
+    border: solid 2px #FF9F1C;
+    padding: 10px;
+    
 }
 
-
-.conteudo .texto p {
-    margin-top: 20px ;
-    color: white;
-    font-size: 40px;
-    font-weight: lighter;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.box-sobre .sobre .escrita p {
+    text-align: justify ;
+    color: #000000;
+    font-stretch: ultra-condensed;
+    font-weight: 600;
 }
+
+/* fim box sobre */
+
+/* footer */
 
 footer {
     text-align: center;
@@ -193,4 +231,4 @@ footer p {
     margin-top: 20px;
 }
 
-/* Fim conteudo  */
+/* footer */
