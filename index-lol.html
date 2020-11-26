@@ -4,66 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esports - LoL</title>
+    <title>LoL</title>
     <!-- logo -->
-    <link rel="shortcut icon" href="imagens/controller.png" type="image/x-icon">
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/8bb4fc3c8e.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/lol-style.css">
+    <link rel="shortcut icon" href="imagens/lol-icon.png" type="image/x-icon">
     <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/lol-style.css">
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <div class="header">
-
-        <div class="container">
-            <!-- Menu de navegação -->
-            <div class="nav">
-                <!-- Icone do LoL -->
-                <img class="lol" src="imagens/lol-icon.png" alt="">
-                <!-- lista suspensa -->
-                <div class="lista">
-                    <select name="" id="Jogos">
-                        <option value="lol">League of Legends</option>
-                        <option value="cs">Counter-strike: go</option>
-                        <option value="vava">Valorant</option>
-                    </select>
-                </div>
-                <!-- Linha -->
-                <div class="linha-vertical"></div>
-                <!-- elementos de vegação -->
-                <div class="linkados">
-                    <ul>
-                        <li class="menu-atual"><a href="#">CAMPEONATOS</a></li>
-                        <li><a href="#">PARTIDAS AO VIVO</a></li>
-                    </ul>
-                </div>
-                <div class="buscar-perfil">
-                    <!-- barra de busca -->
-                    <div class="buscar">
-                        <input type="text" placeholder="BUSCAR INVOCARDOR OU CAMPEÃO">
-                        <a href="#"><i class="fas fa-search"></i></a>
+    <!-- conteudo -->
+    <div class="content">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <!-- container -->
+            <div class="container">
+                <!-- navegação -->
+                <div class="nav">
+                    <img class="controle" src="imagens/lol-icon.png" alt="">
+                    <!-- lista suspensa -->
+                    <div class="lista">
+                        <select name="" id="lista-Jogos">
+                            <option value="selecione">-- Selecione --</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="cs">Counter-strike: go</option>
+                            <option value="valorant">Valorant</option>
+                        </select>
                     </div>
-                    <div class="usuario">
-                        <!-- imagem usuario -->
-                        <div class="imagem">
-                            <img class="img-usuario" src="imagens/usuario.png" alt="">
-                        </div>
-                        <!-- nome do usuario -->
-
-                        <div class="perfil">
-                            <a href="#">Usuário</a>
-                        </div>
+                    <!-- linha -->
+                    <div class="linha-vertical"></div>
+                    <!-- páginas -->
+                    <div class="paginas">
+                        <ul>
+                            <li> <a href="index-oficial.html"> HOME </a> </li>
+                            <li class="menu-atual"> <a href="index-lol.html"> CONTEÚDO </a> </li>
+                            <li> <a href=""> CAMPEONATOS </a> </li>
+                        </ul>
                     </div>
-                    <!-- sair -->
+                    <div class="perfil">
+                        <img src="imagens/usuario.png" alt="">
+                        <b id="usuario"> <a href="">Matheus Pinheiro</a> </b>
+                    </div>
                     <div class="sair">
-                       <a href="#"><img src="imagens/saida.png" alt=""></a> 
+                        <a href="index.html"><img src="imagens/saida.png" alt=""></a>
                     </div>
 
                 </div>
+            </div>
+        </div>
+        <!-- conteudo -->
+        <div class="conteudo">
+            <!-- titulo -->
+            <div class="titulo">
+                <b>League of Legends</b>
+            </div>
+            <!-- COLUNA 1 DE ARTIGOS -->
+            <div class="linha-1">
+                <!-- primeira noticia -->
+                <div class="icone-lol">
+                    <img src="imagens/lol-icon.png" alt="">
+                </div>
+                <a target="_blank" href="https://lolesports.com/article/anúncio-da-escalação-do-all-star-2020!/bltcf911873ab451aad"
+                    title="https://lolesports.com/article/anúncio-da-escalação-do-all-star-2020!/bltcf911873ab451aad">
+                    <div class="noticia-1"> </div>
+                    <div class="texto1">
+                        <b>Artigo</b>
+                        <p>Anúncio da escalação do All-Star 2020!</p>
+                    </div>
+                </a>
+                <!-- segunda noticia -->
+                <div class="icone-twitch">
+                    <img src="imagens/twitch-icon.png" alt="">
+                </div>
+                <a target="_blank" href="https://www.twitch.tv/brtt"
+                    title="https://www.twitch.tv/brtt">
+                    <div class="noticia-2"> </div>
+                    <div class="texto2">
+                        <b>Live</b>
+                        <p>Stream: brtt</p>
+                    </div>
+                </a>
+            </div>
+            <!-- coluna 2 de artigos -->
+            <div class="linha-2">
+                <!-- terceira noticia -->
+                <div class="icone-patch">
+                    <img src="imagens/patch-icon.png" alt="">
+                </div>
+                <a target="_blank" href="https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-24/"
+                    title="https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-24/">
+                    <div class="noticia-3"> </div>
+                    <div class="texto1">
+                        <b>Patch notes</b>
+                        <p>Notas da Atualização 10.24</p>
+                    </div>
+                </a>
+                <!-- quarta noticia -->
+                <div class="icone-youtube">
+                    <img src="imagens/youtube-icon.png" alt="">
+                    <p>YouTube</p>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/watch?v=3VTkBuxU4yk"
+                    title="https://www.youtube.com/watch?v=3VTkBuxU4yk">
+                    <div class="noticia-4"> </div>
+                    <div class="texto2">
+                        <b>Música</b>
+                        <p>K/DA – MORE </p>
+                    </div>
+                </a>
             </div>
         </div>
 
