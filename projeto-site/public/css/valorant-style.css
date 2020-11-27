@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url(../imagens/lol-1.png);
+    background-image: url(../img/valorant-1.jpg);
     background-size: cover;
     
 
@@ -17,7 +17,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
 }
@@ -158,7 +158,7 @@ a {
 
 /* titulo */
 .conteudo .titulo {
-    width: 300px;
+    width: 160px;
     margin: auto;
     margin-top: 15px;
     color: #FDFFFC;
@@ -194,24 +194,24 @@ a {
 }
 
 .conteudo .noticia-1 {
-    background-image: url(../imagens/artigo1.png);
+    background-image: url(../img/artigo1-cs.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
     border-radius: 10px;
-    border: 1px solid #41EAD4;
+    border: 1px solid #fe4655;
 }
 
 /* .conteudo .noticia-1 :hover {
     
 } */
 .conteudo .noticia-2 {
-    background-image: url(../imagens/artigo2.png);
+    background-image: url(../img/artigo2-cs.png);
     background-size: cover ;
     width: 325px;
     height: 180px;
     border-radius: 10px;
-    border: 1px solid #41EAD4;
+    border: 1px solid #6441A5;
     margin-left: 49%;
 }
 
@@ -243,21 +243,21 @@ a {
 }
 
 .conteudo .noticia-3 {
-    background-image: url(../imagens/artigo3.png);
+    background-image: url(../img/artigo3-cs.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
     border-radius: 10px;
-    border: 1px solid #41EAD4;
+    border: 1px solid #FDFFFC;
 }
 
 .conteudo .noticia-4 {
-    background-image: url(../imagens/artigo4.png);
+    background-image: url(../img/artigo4-cs.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
     border-radius: 10px;
-    border: 1px solid #41EAD4;
+    border: 1px solid #F71735;
     margin-left: 49%;
 }
 
@@ -267,21 +267,21 @@ a {
 
 /* icones */
 /* noticia 1 */
-.linha-1 .icone-lol {
+.linha-1 .icone-valorant {
     position: absolute;
-    margin-top: -25px;
+    margin-top: -45px;
     margin-left: -45px;
     width: 80px;
     height: 80px;
     background-color: #1f1f1f;
     border-radius: 600px;
     text-align: center;
-    border: solid 1px #FF9F1C;
+    border: solid 1px #fe4655;
 }
 
-.linha-1 .icone-lol img {
-    margin-top: 3px;
-    width: 70px;
+.linha-1 .icone-valorant img {
+    margin-top: 18px;
+    width: 40px;
 }
 /* fim noticia 1 */
 

@@ -1,0 +1,352 @@
+/* GLOBAL */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/lol-1.png);
+    background-size: cover;
+    
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    height: 73px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* FIM GLOBAL */
+
+/* Header */
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    height: 77px;
+    border-bottom: 4px solid #FF9F1C;
+}
+
+/* header nav */
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav .controle {
+    height: 57px;
+}
+
+.nav .lista {
+    margin-left: 20px;
+}
+
+.nav .lista select {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    color: #41EAD4;   
+    cursor: pointer; 
+}
+
+.nav .lista select option {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF9F1C;
+}
+
+.nav .linha-vertical {
+    background-color: #41EAD4;
+    width: 2px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.nav .paginas {
+    display: flex;
+}
+
+.nav .paginas li  {
+    display: inline-block;
+    color: #FDFFFC;
+    margin-left: 100px;
+    transition: linear 0.50s;
+}
+
+.nav .paginas li  :hover{
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: bold;
+    color: #41EAD4;
+}
+
+
+.nav .menu-atual {
+    border-bottom: solid 2px #FF9F1C;
+}
+
+.nav .perfil {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    width: 250px;
+    /* border: solid red; */
+}
+
+.nav .perfil img {
+    height: 45px;
+}
+
+.nav .perfil b{
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+    
+}
+
+.nav .perfil b :hover {
+    transition: 0.50s;
+    border-bottom: solid 2px white ;
+}
+
+.nav .sair img {
+    height: 33px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* fim header nav */
+
+/* fim header */
+
+
+/* conteudo */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* titulo */
+.conteudo .titulo {
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+    color: #FDFFFC;
+    background-color: rgba(17, 17, 17, 0.500) ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* fim titulo */
+
+/* linha1 de noticas */
+
+
+.conteudo .linha-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+
+
+.conteudo .texto1 b {
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo .texto1 p {
+    color: #FDFFFC;
+}
+
+.conteudo .noticia-1 {
+    background-image: url(../img/artigo1.png);
+    background-size: cover ;
+    width: 325px ;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #41EAD4;
+}
+
+/* .conteudo .noticia-1 :hover {
+    
+} */
+.conteudo .noticia-2 {
+    background-image: url(../img/artigo2.png);
+    background-size: cover ;
+    width: 325px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #41EAD4;
+    margin-left: 49%;
+}
+
+/* fim linha 1 de noticias */
+
+.conteudo .texto2 {
+    width: 400px;
+    margin-left: 50%;
+    
+}
+
+.conteudo .texto2 b {
+    background-image: linear-gradient(90deg, #df5959,#FF9F1C);
+    /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo .texto2 p {
+    color: #FDFFFC;
+}
+
+/* linha 2 de noticias */
+.conteudo .linha-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.conteudo .noticia-3 {
+    background-image: url(../img/artigo3.png);
+    background-size: cover ;
+    width: 325px ;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #41EAD4;
+}
+
+.conteudo .noticia-4 {
+    background-image: url(../img/artigo4.png);
+    background-size: cover ;
+    width: 325px ;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #41EAD4;
+    margin-left: 49%;
+}
+
+
+
+/* fim linha 2 de noticias */
+
+/* icones */
+/* noticia 1 */
+.linha-1 .icone-lol {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -45px;
+    width: 80px;
+    height: 80px;
+    background-color: #1f1f1f;
+    border-radius: 600px;
+    text-align: center;
+    border: solid 1px #FF9F1C;
+}
+
+.linha-1 .icone-lol img {
+    margin-top: 3px;
+    width: 70px;
+}
+/* fim noticia 1 */
+
+/* noticia 2 */
+.linha-1 .icone-twitch {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 475px;
+    width: 80px;
+    height: 80px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px #6441A5;
+}
+
+.linha-1 .icone-twitch img {
+    margin-top: 30px;
+    height: 17px;
+}
+/* fim noticia2 */
+
+/* noticia 3 */
+.linha-2 .icone-patch {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -45px;
+    width: 80px;
+    height: 80px;
+    background-color: #1f1f1f;
+    border-radius: 600px;
+    text-align: center;
+    border: solid 1px #FDFFFC;
+}
+
+.linha-2 .icone-patch img {
+    margin-top: 10px;
+    width: 50px;
+}
+/* fim noticia 3 */
+
+/* noticia 4 */
+.linha-2 .icone-youtube {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 475px;
+    width: 80px;
+    height: 80px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px #F71735;
+    color: #FDFFFC;
+}
+
+.linha-2 .icone-youtube p {
+    margin-top: -10px;
+}
+
+.linha-2 .icone-youtube img {
+    margin-top: 5px;
+    height: 50px;
+}
+/* fim noticia 4 */
+
+/* fim icones */
+
+/* fim conteudo */
