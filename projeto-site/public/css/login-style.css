@@ -70,12 +70,18 @@ a {
 }
 /* fim texto degrade */
 
+#form_login {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
 /* username */
-.username {
+#form_login .username {
     margin-top: 18px;
 }
 
-.username input {
+#form_login .username input {
     height: 40px;
     width: 200px;
     outline: none;
@@ -89,18 +95,18 @@ a {
     transition: 0.25s;
 }
 
-.username :focus {
+#form_login .username :focus {
     width: 300px;
     border-color: #FF9F1C;
 }
 /* fim username */
 
 /* senha */
-.senha {
+#form_login .senha {
     margin-top: 19px;
 }
 
-.senha input {
+#form_login .senha input {
     height: 40px;
     width: 200px;
     outline: none;
@@ -113,7 +119,7 @@ a {
     transition: 0.25s;
 }
 
-.senha :focus {
+#form_login .senha :focus {
     width: 300px;
     border-color: #FF9F1C;
 }

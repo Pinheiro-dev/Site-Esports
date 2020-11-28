@@ -17,7 +17,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.699);
     display: flex;
     flex-direction: column;
 }
@@ -56,6 +56,7 @@ a {
 
 .nav .controle {
     height: 57px;
+    border: 1px solid #FDFFFC;
 }
 
 .nav .lista {
@@ -194,7 +195,7 @@ a {
 }
 
 .conteudo .noticia-1 {
-    background-image: url(../img/artigo1-cs.png);
+    background-image: url(../img/artigo1-valorant.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
@@ -206,7 +207,7 @@ a {
     
 } */
 .conteudo .noticia-2 {
-    background-image: url(../img/artigo2-cs.png);
+    background-image: url(../img/artigo2-valorant.png);
     background-size: cover ;
     width: 325px;
     height: 180px;
@@ -243,7 +244,7 @@ a {
 }
 
 .conteudo .noticia-3 {
-    background-image: url(../img/artigo3-cs.png);
+    background-image: url(../img/artigo3-valorant.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
@@ -252,7 +253,7 @@ a {
 }
 
 .conteudo .noticia-4 {
-    background-image: url(../img/artigo4-cs.png);
+    background-image: url(../img/artigo4-valorant.png);
     background-size: cover ;
     width: 325px ;
     height: 180px;
