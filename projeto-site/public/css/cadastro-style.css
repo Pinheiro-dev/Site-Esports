@@ -33,7 +33,7 @@ a {
 }
 
 .cadastro .botao {
-    margin-top: 30px;
+    margin-top: 40px;
     height: 40px;
     width: 100px;
     outline: none;
@@ -154,6 +154,22 @@ p {
 }
 
 /* fim texto */
+
+/* validar */
+
+.validando {
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 16px;
+    text-align: justify;
+    width: 200px;
+    height: 20px;
+
+}
+
+/* fim validar */
 
 /* Opacidade e a */
 

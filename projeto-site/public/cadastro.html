@@ -66,7 +66,7 @@
             </div>
             <!-- input senha -->
             <div class="input-a">
-                <input type="password" name="senha" placeholder="Entre com sua senha" required minlength="8" maxlength="45">
+                <input id="input_senha" type="password" name="senha" placeholder="Entre com sua senha" required minlength="8" maxlength="45">
             </div>
             <!-- confirmar senha -->
             <div class="senha">
@@ -74,7 +74,11 @@
             </div>
             <!-- input comfirmar senha -->
             <div class="input-a">
-                <input type="password" name="confirmarSenha" onkeyup="" placeholder="Entre com sua senha" required minlength="8" maxlength="45">
+                <input id="input_confirmar" type="password" name="confirmarSenha" onkeyup="validar()" placeholder="Entre com sua senha" required minlength="8" maxlength="45">
+            </div>
+            <div class="validando">
+                <p id="msg_erro"></p>
+                <img id="img_validar" src="" >
             </div>
             <!-- cadastro -->
             <div class="cadastro">
@@ -96,6 +100,32 @@
 
 
 <script>
+        
+    
+
+    function validar() {
+        let pw = input_senha.value;
+        let confirmar_pw = input_confirmar.value;
+
+
+
+        if (confirmar_pw == pw && confirmar_pw.length >= 8 && pw.length >=8) {
+
+            msg_erro.innerHTML = "Senha válida!";
+            msg_erro.style.color = "green";
+            img_validar.src = "img/correto.png"
+            img_validar.style = "height: 20px; margin-left: 5px";
+            btn_entrar.style.visibility = "visible";
+            
+        } else {
+            msg_erro.innerHTML = "Senha não está igual!";
+            msg_erro.style.color = "red";
+            img_validar.src = "img/errado.png";
+            img_validar.style = "height: 20px; margin-left: 5px";
+            btn_entrar.style.visibility = "hidden";
+        }
+
+    }
 
     function cadastrar() {
         aguardar();
