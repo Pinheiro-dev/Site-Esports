@@ -32,7 +32,7 @@ a {
     box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.185);
 }
 
-.cadastro button {
+.cadastro .botao {
     margin-top: 30px;
     height: 40px;
     width: 100px;
@@ -53,43 +53,35 @@ a {
     color: black;
 }
 
+#form_cadastro {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+
 /* fim box cadastro */
+
+.voltar img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -230px;
+    height: 50px;
+    transition: 0.7s;
+}
+
+.voltar :hover {
+    height: 60px;
+}
 
 /* Titulo */
 
 .titulo {
     font-size: 48px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 /* fim titulo */
-/* entrar com google */
-.a-google {
-    margin-top: 19px;
-}
-
-.google {
-    display: flex;
-    /* margin-top: 19px; */
-    height: 30px;
-    width: 200px;
-    color: black;
-    border-radius: 26px;
-    border: 2px solid #1F1F1F;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: center;
-    
-}
-
-.google img {
-    height: 20px;
-    margin-right: 10px;
-    color: black;
-    
-}
-/* fim entrar com google */
 
 /* OU */
 
@@ -104,13 +96,10 @@ a {
     
 }
 
-.ou p {
-    margin: 5px;
-}
-
 .ou .linha{
     width: 180px;
     height: 2px;
+    margin-top: 20px;
     background-color:#ffa01c7a;
 }
 
@@ -130,10 +119,13 @@ a {
     transition: 0.25s;
 }
 
+
 .input-a :focus {
     width: 300px;
     border-color: #FF9F1C;
 }
+
+
 
 /* fim input */
 

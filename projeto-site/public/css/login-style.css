@@ -53,7 +53,7 @@ a {
 /* texto degrade */
 .texto {
     font-size: 48px;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 
@@ -64,9 +64,6 @@ a {
     /* WEBKIT SERVE PARA FUNCIONAR EM VÁRIOS NAVEGADORES */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* cria uma animação */
-    /* animation: colorCycle 10s; */
-    /* deixa inifnito */
 }
 /* fim texto degrade */
 
@@ -126,19 +123,6 @@ a {
 /* fim senha */
 
 
-/* esqueceu a senha */
-.esqueceu {
-    margin-top: 10px;
-    margin-right:75px;
-    
-}
-
-.esqueceu p {
-    font-size: 12px;
-    color: black;
-}
-/* fim esqueceu a senha */
-
 /* botao */
 .login {
     margin-top: 20px;
@@ -167,34 +151,6 @@ a {
 }
 /* fim botao */
 
-/* entrar com google */
-.a-google {
-    margin-top: 19px;
-}
-
-.google {
-    display: flex;
-    /* margin-top: 19px; */
-    height: 30px;
-    width: 200px;
-    color: black;
-    border-radius: 26px;
-    border: 2px solid black;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: center;
-    
-}
-
-.google img {
-    height: 20px;
-    margin-right: 10px;
-    color: #756767;
-    
-}
-/* fim entrar com google */
-
 .opacidade {
     display: flex;
     align-items: center;
@@ -222,5 +178,21 @@ a :hover {
     /* text-decoration: underline; */
 }
 /* fim cadastro */
+
+
+.carregar {
+    margin: 10px;
+}
+
+.carregar img {
+  height: 50px;
+   visibility: hidden;
+}
+
+.carregar .msg_erro {
+    background-color:  white; 
+    color: red; 
+    visibility: hidden;
+}
 
 /* fim login */

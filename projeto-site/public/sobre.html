@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/sobre-style.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <script type="text/javascript" src="perfil.js"></script>
 </head>
-<body>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+
+</script>
+
+<body onload="verificar_autenticacao()">
     <!-- conteudo -->
     <div class="content">
         <!-- cabeçalho -->
@@ -23,7 +35,7 @@
                     <img class="controle" src="img/controller.png" alt="">
                     <!-- lista suspensa -->
                     <div class="lista">
-                        <select name="" id="lista-Jogos">
+                        <select name="" id="lista_jogos" onchange="trocar_pagina()">
                             <option value="selecione">-- Selecione --</option>
                             <option value="lol">League of Legends</option>
                             <option value="cs">Counter-strike: go</option>
@@ -40,8 +52,8 @@
                         </ul>
                     </div>
                     <div class="perfil">
-                        <img src="img/usuario.png" alt="">
-                        <b id="usuario"> <a href="">Matheus Pinheiro</a> </b>
+                        <img id="foto_usuario" src="img/usuario.png" alt="">
+                        <b id="usuario"> <a href=""><span id="b_usuario"></span></a> </b>
                     </div>
                     <div class="sair">
                         <a href="index.html"><img src="img/saida.png" alt=""></a>
@@ -65,15 +77,23 @@
                         <p>18 anos</p>
                         <p>Sonho em trabalhar com Esports / Jogos</p>
                     </div>
-                    
+
                 </div>
                 <!-- texto -->
                 <div class="escrita">
-                    <p>Meu nome é Matheus Pinheiro Barbosa, tenho 18 anos de idade e sou o criador do Esports Content, o intuito do Esports Content é unir conteúdos relacionados a Esports em geral.
-                        <br> Conheci o Esports a partir do jogo League of Legends e desde então se tornou um hobbie assistir campeonatos, a minha paixão por Esports aumentou após conhecer os Streamers de jogos competitivos e os competidores em si, pois foi onde eu aprendi como esse meio é tão grandioso.
-                        <br> Esses conteúdos que abrange todo o Esport me fez crescer como pessoa, aprendi a ter resiliência e sempre me empenhar para o ser o melhor em tudo que eu faço, aprendi como tudo na vida precisa de amigos, de uma equipe, porque tudo fica melhor com alguém ao seu lado; aprendi a ter empatia e a ajudar sem olhar a quem.
-                        <br> O mundo dos Esports e dos jogos mudou a minha forma de pensar, a minha forma de viver e por isso tenho um sonho de um dia poder trabalhar com isso, um sonho de fazer parte deste mundo tão incrível e inovador.
-                     </p>
+                    <p>Meu nome é Matheus Pinheiro Barbosa, tenho 18 anos de idade e sou o criador do Esports Content, o
+                        intuito do Esports Content é unir conteúdos relacionados a Esports em geral.
+                        <br> Conheci o Esports a partir do jogo League of Legends e desde então se tornou um hobbie
+                        assistir campeonatos, a minha paixão por Esports aumentou após conhecer os Streamers de jogos
+                        competitivos e os competidores em si, pois foi onde eu aprendi como esse meio é tão grandioso.
+                        <br> Esses conteúdos que abrange todo o Esport me fez crescer como pessoa, aprendi a ter
+                        resiliência e sempre me empenhar para o ser o melhor em tudo que eu faço, aprendi como tudo na
+                        vida precisa de amigos, de uma equipe, porque tudo fica melhor com alguém ao seu lado; aprendi a
+                        ter empatia e a ajudar sem olhar a quem.
+                        <br> O mundo dos Esports e dos jogos mudou a minha forma de pensar, a minha forma de viver e por
+                        isso tenho um sonho de um dia poder trabalhar com isso, um sonho de fazer parte deste mundo tão
+                        incrível e inovador.
+                    </p>
                 </div>
             </div>
         </div>
@@ -82,4 +102,19 @@
         </footer>
     </div>
 </body>
+
 </html>
+<script>
+    function trocar_pagina() {
+
+        if (lista_jogos.value == "valorant") {
+            window.location.href = "index-valorant.html";
+        } else if (lista_jogos.value == "lol") {
+            window.location.href = "index-lol.html";
+        } else if (lista_jogos.value == "cs") {
+            window.location.href = "index-cs.html";
+        } else {
+            alert("Escolha uma das opções abaixo");
+        }
+    }
+</script>

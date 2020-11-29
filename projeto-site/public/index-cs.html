@@ -11,9 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/cs-style.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <script type="text/javascript" src="perfil.js"></script>
 </head>
+<script>
 
-<body>
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script>
+
+<body onload="verificar_autenticacao()">
     <!-- conteudo -->
     <div class="content">
         <!-- Cabeçalho -->
@@ -43,8 +53,8 @@
                         </ul>
                     </div>
                     <div class="perfil">
-                        <img src="img/usuario.png" alt="">
-                        <b id="usuario"> <a href="">Matheus Pinheiro</a> </b>
+                        <img id="foto_usuario" src="img/usuario.png" alt="">
+                        <b id="usuario"> <a href=""><span id="b_usuario"></span></a> </b>
                     </div>
                     <div class="sair">
                         <a href="index.html"><img src="img/saida.png" alt=""></a>

@@ -9,8 +9,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/cs-1.png);
     background-size: cover;
-    
-
 }
 
 .content {
@@ -122,6 +120,7 @@ a {
 
 .nav .perfil img {
     height: 45px;
+    border-radius: 50px;
 }
 
 .nav .perfil b{

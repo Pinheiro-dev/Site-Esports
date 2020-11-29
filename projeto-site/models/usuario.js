@@ -12,6 +12,11 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
+		},
+		email: {
+			field: 'email',
+			type: DataTypes.STRING,
+			allowNull: false
 		},		
 		nome: {
 			field: 'nome',
@@ -25,6 +30,11 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		senha: {
 			field: 'senha',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		confirmarSenha: {
+			field: 'confirmarSenha',
 			type: DataTypes.STRING,
 			allowNull: false
 		}

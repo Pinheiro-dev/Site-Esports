@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="css/login-style.css">
     <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="perfil.js"></script>
 </head>
+
 
 <body>
 
@@ -23,39 +25,24 @@
         <div class="box-login">
             <!-- titulo -->
             <div class="texto">
-
                 <p>LOGIN</p>
             </div>
+            <!-- formulario -->
             <form id="form_login" method="post">
                 <!-- input de nome -->
                 <div class="username">
-                    <input type="text" placeholder="Username">
+                    <input type="text" name="login" placeholder="Username">
                 </div>
                 <!-- input de senha -->
                 <div class="senha">
-                    <input type="password" placeholder="Senha">
+                    <input type="password" name="senha" placeholder="Senha">
                 </div>
             </form>
-            <!-- esqueceu a senha -->
-            <div class="esqueceu">
-                <a href="#">
-                    <p>Esqueceu sua senha?</p>
-                </a>
-            </div>
             <!-- botao login -->
             <div class="login">
-                <button id="btn_entrar" onclick="entrar()">Login</button>
+                <button id="btn_entrar" onclick="entrar();">Login</button>
             </div>
 
-            <!-- botao google -->
-            <a class="a-google" href="index-oficial.html">
-                <div class="google">
-                    <div class="opacidade">
-                        <img src="img/google-plus (1).svg" alt="">
-                        <p>Entrar com o Google</p>
-                    </div>
-                </div>
-            </a>
             <!-- cadastro -->
             <div class="cadastro">
                 <a href="cadastro.html">
@@ -63,6 +50,12 @@
                 </a>
             </div>
 
+            <div class="carregar">
+                <div id="div_erro" class="msg_erro">
+                </div>
+
+                <img src="img/loading.gif" id="img_aguarde">
+            </div>
 
         </div>
     </div>
@@ -73,6 +66,7 @@
 <script>
 
     function entrar() {
+        
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
@@ -83,11 +77,11 @@
             if (resposta.ok) {
 
                 resposta.json().then(json => {
-
+                    perfil();
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
-                    window.location.href = 'sobre.html';
+                    window.location.href = 'index-oficial.html';
                 });
 
             } else {

@@ -13,7 +13,9 @@ function verificar_autenticacao() {
         redirecionar_login();
     } else {
         b_usuario.innerHTML = nome_usuario;
+        foto_usuario.src = sessionStorage.imagem_usuario;
         validar_sessao();
+        
     }
     
 }

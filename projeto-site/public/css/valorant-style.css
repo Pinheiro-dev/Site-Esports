@@ -123,6 +123,7 @@ a {
 
 .nav .perfil img {
     height: 45px;
+    border-radius: 50px;
 }
 
 .nav .perfil b{
