@@ -8,6 +8,6 @@ function trocar_pagina() {
     } else if (lista_jogos.value == "cs") {
         window.location.href = "index-cs.html";
     } else {
-        alert ("Escolha uma das opções abaixo");
+        alert("Escolha uma das opções abaixo");
     }
 }
