@@ -1,7 +1,7 @@
 module.exports = {
   production: {
     username: 'bdEsports',
-    password: '#Gf47240958817',
+    password: 'senha',
     database: 'bdEsports',
     host: 'bdesports.database.windows.net',
     dialect: 'mssql',
@@ -11,7 +11,7 @@ module.exports = {
         encrypt: true
       }
     },
-    pool: { 
+    pool: {
       max: 5,
       min: 1,
       acquire: 5000,
@@ -20,4 +20,4 @@ module.exports = {
     }
   }
 };
- 
+
