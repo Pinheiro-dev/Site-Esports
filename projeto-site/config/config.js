@@ -1,7 +1,7 @@
 module.exports = {
   production: {
-    username: 'bdEsports',
-    password: '#Gf47240958817',
+    username: 'bdEsports', 
+    password: 'senha',
     database: 'bdEsports',
     host: 'bdesports.database.windows.net',
     dialect: 'mssql',
